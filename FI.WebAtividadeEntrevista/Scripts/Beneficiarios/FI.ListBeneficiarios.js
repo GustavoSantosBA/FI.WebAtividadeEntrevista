@@ -1,8 +1,7 @@
 function carregarBeneficiarios() {
-    let idCliente = $("#Id").val();
+    let idCliente = obj.Id
 
     $.ajax({
-        debugger
         url: "/Beneficiario/Listar?idCliente=" + idCliente,
         method: "GET",
         success: function (data) {

@@ -8,7 +8,7 @@ $(document).ready(function () {
         let id = $("#beneficiarioId").val();
         let cpf = $("#cpfBeneficiario").val();
         let nome = $("#nomeBeneficiario").val();
-        let idCliente = $("#Id").val();
+        let idCliente = obj.Id
 
         if (!cpf || !nome) {
             ModalDialog("Atenção", "Preencha todos os campos!");
