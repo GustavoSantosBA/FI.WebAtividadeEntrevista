@@ -1,0 +1,11 @@
+CREATE PROC FI_SP_AltBeneficiario
+    @ID     BIGINT,
+    @CPF    VARCHAR(14),
+    @NOME   VARCHAR(255)
+AS
+BEGIN
+    UPDATE BENEFICIARIOS
+    SET CPF = @CPF,
+        NOME = @NOME
+    WHERE ID = @ID
+END
